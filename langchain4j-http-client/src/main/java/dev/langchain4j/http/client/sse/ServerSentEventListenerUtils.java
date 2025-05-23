@@ -5,7 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 @Internal
-public class ServerSentEventListenerUtils {
+public final class ServerSentEventListenerUtils {
+    private ServerSentEventListenerUtils() {}
 
     private static final Logger log = LoggerFactory.getLogger(ServerSentEventListenerUtils.class);
 
