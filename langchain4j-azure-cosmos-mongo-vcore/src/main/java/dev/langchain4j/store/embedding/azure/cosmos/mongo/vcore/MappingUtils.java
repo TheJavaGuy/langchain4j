@@ -7,7 +7,7 @@ import dev.langchain4j.store.embedding.EmbeddingMatch;
 
 import static dev.langchain4j.internal.Utils.toStringValueMap;
 
-class MappingUtils {
+final class MappingUtils {
 
     private MappingUtils() throws InstantiationException {
         throw new InstantiationException("can't instantiate this class");
