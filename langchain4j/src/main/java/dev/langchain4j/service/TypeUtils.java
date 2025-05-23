@@ -16,7 +16,8 @@ import static dev.langchain4j.internal.ValidationUtils.ensureNotNull;
 import static java.util.stream.Collectors.toList;
 
 @Internal
-public class TypeUtils {
+public final class TypeUtils {
+    private TypeUtils() {}
 
     public static Class<?> getRawClass(Type type) {
         if (type == null) {

@@ -19,7 +19,8 @@ import static dev.langchain4j.internal.Utils.isNullOrEmpty;
 import static dev.langchain4j.model.chat.request.ToolChoice.REQUIRED;
 
 @Internal
-public class ChatRequestValidationUtils {
+public final class ChatRequestValidationUtils {
+    private ChatRequestValidationUtils() {}
 
     public static void validateMessages(List<ChatMessage> messages) {
         for (ChatMessage message : messages) {

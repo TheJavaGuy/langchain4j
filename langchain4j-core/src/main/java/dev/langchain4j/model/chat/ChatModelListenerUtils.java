@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 @Internal
-class ChatModelListenerUtils {
+final class ChatModelListenerUtils {
 
     private static final Logger LOG = LoggerFactory.getLogger(ChatModelListenerUtils.class);
 

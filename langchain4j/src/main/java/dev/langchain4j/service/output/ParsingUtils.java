@@ -14,10 +14,10 @@ import static dev.langchain4j.internal.Utils.isNullOrEmpty;
 import static dev.langchain4j.internal.Utils.quoted;
 
 @Internal
-class ParsingUtils {
+final class ParsingUtils {
+    private ParsingUtils() {}
 
     static <T> T parseAsStringOrJson(String text, Function<String, T> parser, Class<T> type) {
-
         if (isNullOrBlank(text)) {
             throw outputParsingException(text, type);
         }
