@@ -37,7 +37,7 @@ import java.security.cert.X509Certificate;
 /**
  * Some utilities for SSL
  */
-public class SSLUtils {
+public final class SSLUtils {
 
     /**
      * Create a SSL Context from a Certificate

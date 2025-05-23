@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-class MappingUtils {
+final class MappingUtils {
 
     private MappingUtils() throws InstantiationException {
         throw new InstantiationException("Can't instantiate this class");

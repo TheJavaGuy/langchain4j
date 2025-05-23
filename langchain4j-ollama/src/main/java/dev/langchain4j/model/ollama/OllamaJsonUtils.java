@@ -8,7 +8,7 @@ import dev.langchain4j.Internal;
 import static com.fasterxml.jackson.databind.SerializationFeature.INDENT_OUTPUT;
 
 @Internal
-class OllamaJsonUtils {
+final class OllamaJsonUtils {
 
     private OllamaJsonUtils() throws InstantiationException {
         throw new InstantiationException("Can't instantiate this utility class.");

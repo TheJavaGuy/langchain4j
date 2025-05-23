@@ -14,7 +14,7 @@ import static dev.langchain4j.internal.Utils.isNullOrEmpty;
  * Utility class for validating method arguments.
  */
 @Internal
-public class ValidationUtils {
+public final class ValidationUtils {
 
     private ValidationUtils() {}
 

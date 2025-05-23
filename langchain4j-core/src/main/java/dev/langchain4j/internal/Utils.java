@@ -38,7 +38,7 @@ import org.jspecify.annotations.Nullable;
  * Utility methods.
  */
 @Internal
-public class Utils {
+public final class Utils {
 
     private Utils() {}
 

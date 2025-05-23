@@ -77,6 +77,7 @@ import static java.util.stream.Collectors.toList;
 
 @Internal
 public class OpenAiUtils {
+    private OpenAiUtils() {}
 
     public static final String DEFAULT_OPENAI_URL = "https://api.openai.com/v1";
     public static final String DEFAULT_USER_AGENT = "langchain4j-openai";

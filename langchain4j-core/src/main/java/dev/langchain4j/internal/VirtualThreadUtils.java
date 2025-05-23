@@ -19,7 +19,8 @@ import org.jspecify.annotations.Nullable;
  * @author Konstantin Pavlov
  */
 @Internal
-public class VirtualThreadUtils {
+public final class VirtualThreadUtils {
+    private VirtualThreadUtils() {}
 
     @Nullable
     private static Method newVirtualThreadPerTaskExecutorMethod;

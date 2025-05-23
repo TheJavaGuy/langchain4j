@@ -33,7 +33,8 @@ import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Internal
-public class JsonSchemaElementUtils {
+public final class JsonSchemaElementUtils {
+    private JsonSchemaElementUtils() {}
 
     private static final String DEFAULT_UUID_DESCRIPTION = "String in a UUID format";
 
