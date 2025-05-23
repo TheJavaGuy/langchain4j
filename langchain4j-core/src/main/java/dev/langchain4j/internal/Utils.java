@@ -31,7 +31,7 @@ import static java.util.Collections.unmodifiableSet;
  * Utility methods.
  */
 @Internal
-public class Utils {
+public final class Utils {
 
   private Utils() {}
 

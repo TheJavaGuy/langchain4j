@@ -16,7 +16,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Internal
-class ImageUtils {
+final class ImageUtils {
+    private ImageUtils() {}
 
     private static final List<String> SUPPORTED_URL_SCHEMES = Arrays.asList("http", "https", "file");
 
@@ -28,7 +29,6 @@ class ImageUtils {
     }
 
     static String base64Image(Image image) {
-
         if (image.base64Data() != null && !image.base64Data().isEmpty()) {
             return image.base64Data();
         } else {
@@ -49,7 +49,6 @@ class ImageUtils {
     private static String fileScheme(Image image) {
         byte[] fileBytes = readAllBytes(Paths.get(image.url()));
         return Base64.getEncoder().encodeToString(fileBytes);
-
     }
 
     private static byte[] readAllBytes(Path path) {

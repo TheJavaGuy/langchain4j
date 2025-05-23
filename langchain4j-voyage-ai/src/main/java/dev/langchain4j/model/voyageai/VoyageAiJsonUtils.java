@@ -8,7 +8,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.PropertyNamingStrategies;
 import com.fasterxml.jackson.databind.SerializationFeature;
 
-class VoyageAiJsonUtils {
+final class VoyageAiJsonUtils {
 
     private VoyageAiJsonUtils() throws InstantiationException {
         throw new InstantiationException("Can't instantiate this utility class.");
