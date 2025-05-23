@@ -14,7 +14,8 @@ import software.amazon.awssdk.services.bedrockruntime.model.ImageFormat;
  * Utility methods.
  */
 @Internal
-class Utils {
+final class Utils {
+    private Utils() {}
     /**
      * Extracts the extension from a file path, URI, or URL.
      * @param uri The path to analyze.
